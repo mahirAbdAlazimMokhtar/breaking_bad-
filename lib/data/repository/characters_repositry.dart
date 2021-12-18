@@ -6,7 +6,7 @@ class CharactersRepository {
    //this use for passing data to repo
    CharactersRepository(this.charactersWebServices);
    //الدالة دي عشان تجيب لي اوبجكت من البيانات ال في الويب سيرفز واقدر من خلال امررها لل الكيوبت
-   Future<List<dynamic>> getAllCharacters() async{
+   Future<List<Character>> getAllCharacters() async{
      //هنا عملت متغير وحينتظر البيانات الجاية من ال ويب سيرفز
      final characters = await charactersWebServices!.getAllCharacters();
      //هنا برجع الاوبجكت بتاعي في شكل ماب بناءا علي الجسون بتاعتي واحولها لي لستة
