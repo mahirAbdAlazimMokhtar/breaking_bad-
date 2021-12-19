@@ -1,14 +1,14 @@
 class Character{
-  int? charID;
-  String? name;
-  String? nickName;
-  String? image;
-  List<dynamic>? jobs;
-  String? statusIfDeadOrAlive;
-  List<dynamic>? appearanceOfSeasons;
-  String? actorName;
-  String? categoryForTwoSeries;
-  List<dynamic>? betterCallSaulAppearance;
+  late int charID;
+  late String name;
+  late String nickName;
+  late String image;
+  late List<dynamic> jobs;
+  late String statusIfDeadOrAlive;
+  late List<dynamic> appearanceOfSeasons;
+  late String actorName;
+  late String categoryForTwoSeries;
+  late List<dynamic> betterCallSaulAppearance;
 
 //this method request data from json = API
   Character.fromJson(Map<String , dynamic> json){
