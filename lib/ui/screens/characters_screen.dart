@@ -159,7 +159,6 @@ class _CharactersScreenState extends State<CharactersScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         backgroundColor: MyColors.myYellow,
         title: _isSearching ? _buildSearchField() : _buildAppBarTitle() ,
         actions: _buildAppBarActions(),
