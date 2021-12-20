@@ -1,5 +1,6 @@
 import 'package:breaking_bad_series/business_logic/bloc/cubit/characters_cubit.dart';
 import 'package:breaking_bad_series/constants/strings.dart';
+import 'package:breaking_bad_series/data/models/character_model.dart';
 import 'package:breaking_bad_series/data/repository/characters_repositry.dart';
 import 'package:breaking_bad_series/data/web_services/characters_web_services.dart';
 import 'package:breaking_bad_series/ui/screens/charactersDetails_screen.dart';
@@ -28,8 +29,9 @@ class AppRoutes {
           ),
         );
       case charactersDetailsScreen:
+        final character = settings.arguments as Character;
         return MaterialPageRoute(
-            builder: (_) => const CharactersDetailsScreen());
+            builder: (_) =>  CharactersDetailsScreen(character: character,));
     }
   }
 }
